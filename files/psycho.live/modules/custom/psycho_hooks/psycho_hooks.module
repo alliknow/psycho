@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Drupal Module: Psycho Custom.
+ *
+ * Adds some specific functionality to the Psycho site.
+ *
+ * @author: Kevin Hausmann
+ */
+
+/**
+ * Implements hook_mail_alter().
+ */
+function psycho_hooks_mail_alter(&$message) {
+  // Alter contact mail to make it look better and to properly sum up the data
+  if (isset($message['id']) && $message['id'] == 'contact_page_mail') {
+    
+    // Alter submissions of the correct only
+    $contact_message = $message['params']['contact_message'];
+    if ($contact_message->bundle() == 'terminanfrage') {
+      $name = $contact_message->getSenderName();
+      $mail = $contact_message->getSenderMail();
+      $phone = $contact_message->get('field_ihre_telefonnummer')->getString();
+      $insurance = $contact_message->get('field_ihre_krankenkasse')->getString();
+      $complaint = $contact_message->get('field_beschwerden')->getString();
+      
+      $message['subject'] = sprintf('Terminanfrage von %s (%s)', $name, $insurance);
+      
+      unset($message['body']);
+      $message['body'][0] = sprintf('%s (%s) hat im Online-Formular eine Terminanfrage gestellt. ', $name, $mail);
+      $message['body'][0] .= (trim($phone) == '' ? 'Es wurde keine Telefonnummer angegeben.' :
+        sprintf('Als Telefonnummer wurde %s angegeben.', $phone));
+      $message['body'][1] = sprintf('%s ist bei der Krankenkasse "%s" versichert und klagt über folgende Beschwerden:', $name, $insurance);
+      $message['body'][2] = $complaint;
+    }
+  }
+}

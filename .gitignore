@@ -1,0 +1,9 @@
+# Ignore configuration files that may contain sensitive information.
+files/psycho.live/settings.php
+
+# Ignore paths that contain generated content.
+files/psycho.live/files/
+files/psycho.live/private
+
+# Ignore database
+database/psycho.sql

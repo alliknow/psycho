@@ -1,0 +1,72 @@
+@media all and (max-width: 559px) {
+  #psycho-start-behandlung {
+    position: relative;
+    height: 310px;
+    padding: 10px;
+    margin-bottom: 18px;
+  }
+
+  #psycho-start-termin {
+    position: relative;
+    height: 310px;
+    padding: 10px;
+    margin-bottom: 18px;
+  }
+
+  #psycho-start-kontakt {
+    position: relative;
+    height: 310px;
+    padding: 10px;
+  }
+}
+
+@media all and (min-width: 560px) and (max-width: 900px) {
+  #psycho-start-behandlung {
+    float: left;
+    position: relative;
+    width: 45%;
+    height: 310px;
+    padding: 10px;
+    margin-bottom: 18px;
+  }
+
+  #psycho-start-termin {
+    float: right;
+    position: relative;
+    width: 45%;
+    height: 310px;
+    padding: 10px;
+  }
+
+  #psycho-start-kontakt {
+    clear: both;
+    position: relative;
+    height: 310px;
+    padding: 10px;
+  }
+}
+
+@media all and (min-width: 901px) {
+  #psycho-start-behandlung {
+    float: left;
+    width: 30%;
+    height: 310px;
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  #psycho-start-termin {
+    float: left;
+    width: 30%;
+    position: relative;
+    height: 310px;
+    padding: 10px;
+  }
+
+  #psycho-start-kontakt {
+    float: right;
+    width: 30%;
+    height: 310px;
+    padding: 10px;
+  }
+}

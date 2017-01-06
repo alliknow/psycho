@@ -1,0 +1,137 @@
+body {
+    background: rgb(15, 122, 77);
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+/*
+ * Header (above main menu)
+ */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    
+    .navbar-brand {
+        padding: 5px 5px;
+        height: unset;
+        line-height: 40px;
+        font-size: 36px;
+    }
+    .navbar > .container .navbar-brand,
+    .navbar > .container-fluid .navbar-brand {
+        margin: 20px 0px;
+        color: white;
+    }
+
+    #block-therapy-therapeuten {
+        clear: both;
+        margin: 15px 5px;
+        font-size: 22px;
+        color: white;
+    }
+}
+@media (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+
+    .navbar-brand {
+        padding: 5px 5px;
+        height: unset;
+        line-height: 32px;
+        font-size: 30px;
+    }
+    .navbar > .container .navbar-brand,
+    .navbar > .container-fluid .navbar-brand {
+        margin: 10px 0px;
+        color: white;
+    }
+
+    #block-therapy-therapeuten {
+        clear: both;
+        margin: 5px 5px;
+        font-size: 18px;
+        color: white;
+    }
+}
+
+/*
+ * Main menu
+ */
+.navbar {
+    background-color: rgb(145, 200, 73);
+    margin-bottom: 0px;
+    border: 0px;
+}
+#block-therapy-main-menu {
+    clear: both;
+}
+@media (min-width: 768px) {
+    .navbar-default .navbar-nav > li {
+        margin-right: 3px;
+    }
+    .navbar-default .navbar-nav > li > a {
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+.navbar-default .navbar-nav > li > a {
+    background-color: white;  
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: rgba(15, 122, 77, .5);
+}
+.navbar-default .navbar-nav > .active > a {
+    background-color: rgba(15, 122, 77, .5);
+}
+
+/*
+ * Main content
+ */
+.main-container {
+    background: white;
+    width: 100%;
+    padding: 35px 15px;
+}
+.main-container > .row {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+ * Special details
+ */
+.psycho-box {
+    border: 1px solid rgb(242, 242, 242);
+    box-shadow: 0px 3px 4px -2px rgb(204, 204, 204);
+}
+.psycho-box > h2 {
+    margin-top: 5px;
+}
+
+#block-therapy-terminhinweise {
+    margin-bottom: 25px;
+}
+.form-required::after {
+    margin-left: 3px;
+    margin-bottom: 5px;
+}
+#edit-preview {
+    visibility: hidden;
+}
+
+/*
+ * Footer
+ */
+.footer {
+    margin-top: 0px;
+    border: 0px;
+}

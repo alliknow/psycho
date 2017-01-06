@@ -1,0 +1,7 @@
+global-styling:
+  css:
+    component:
+      https://fonts.googleapis.com/css?family=Roboto: { type: external }
+      css/style.css: {}
+      css/start.css: {}
+      css/kontakt.css: {}

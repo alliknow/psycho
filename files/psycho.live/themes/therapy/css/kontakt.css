@@ -1,0 +1,76 @@
+@media all and (max-width: 559px) {
+  #psycho-kontakt-kontakt {
+    position: relative;
+    height: 290px;
+    padding: 10px;
+    margin-bottom: 18px;
+  }
+
+  #psycho-kontakt-termin {
+    position: relative;
+    height: 290px;
+    padding: 10px;
+    margin-bottom: 18px;
+  }
+
+  #psycho-kontakt-karte {
+    position: relative;
+    height: 620px;
+    padding: 10px;
+  }
+}
+
+@media all and (min-width: 560px) and (max-width: 900px) {
+  #psycho-kontakt-kontakt {
+    float: left;
+    position: relative;
+    width: 45%;
+    height: 290px;
+    padding: 10px;
+    margin-bottom: 18px;
+  }
+
+  #psycho-kontakt-termin {
+    float: right;
+    position: relative;
+    width: 45%;
+    height: 290px;
+    padding: 10px;
+  }
+
+  #psycho-kontakt-karte {
+    clear: both;
+    position: relative;
+    height: 620px;
+    padding: 10px;
+  }
+
+}
+
+@media all and (min-width: 901px) {
+  #psycho-kontakt-wrapper {
+    float: left;
+    width: 37%;
+    margin-right: 12px
+  }
+
+  #psycho-kontakt-kontakt {
+    position: relative;
+    height: 310px;
+    padding: 10px;
+    margin-bottom: 18px;
+  }
+
+  #psycho-kontakt-termin {
+    position: relative;
+    height: 290px;
+    padding: 10px;     
+  }
+
+  #psycho-kontakt-karte {
+    float: right;
+    width: 57%;
+    height: 620px;
+    padding: 10px;
+  }
+}

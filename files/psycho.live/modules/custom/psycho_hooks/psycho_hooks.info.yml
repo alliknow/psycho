@@ -1,0 +1,6 @@
+name: Psycho Custom Module
+description: Implements some hooks for the psycho site
+package: Custom
+
+type: module
+core: 8.x
